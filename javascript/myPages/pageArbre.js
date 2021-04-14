@@ -24,7 +24,7 @@ class MyPageArbre {
                         id: "", class: "btn btn-primary m-2", onclick: () => { module.searchDiagram("mySearch", this.varDiagrame) }
                     }, children: ["Chercher"]
                 },
-                { type: "button", props: { id: "svgButton3", class: "btn btn-primary m-2", onclick: () => { module.createImage(this.varDiagrame) } }, children: ["Télécharger l'arbre"] },
+                // { type: "button", props: { id: "svgButton3", class: "btn btn-primary m-2", onclick: () => { module.createImage(this.varDiagrame) } }, children: ["Télécharger l'arbre"] },
                 { type: "div", props: { id: "myOverviewDiv", class: "" }, children: [] },
                 {
                     type: "div", props: {
