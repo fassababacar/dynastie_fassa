@@ -10,12 +10,12 @@ class MyPageLivret {
                 { type: "h1", props: { id: "", class: "h1 text-center" }, children: ["Livret de la famille FASSA"] },
                 {
                     type: "div", props: { id: "", class: "row" }, children: [
-                        // Babacar FASSA
+                        // Babacar FASSA mesImages\img_avatar1.png
                         {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: './mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
                                     }, children: []
                                 },
                                 {
