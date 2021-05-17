@@ -172,11 +172,8 @@ var linkDataArray2 = [
 // Function Create synoptique
 // This converter is used by the Picture.
 function findHeadShot(key) {
-	// return "../../mesImages/img_avatar1.png"; // There are only 16 images on the server
 	if (key < 0 || key > 2) return "mesImages/img_avatar1.png"; // There are only 16 images on the server
-	console.log("mesImages/df" + key + ".png");
 	return "mesImages/df" + key + ".png"
-	// return "mesImages/img_avatar1.png";
 }
 function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMyOverviewDiv) {
 	var $ = go.GraphObject.make;  // for conciseness in defining templates
