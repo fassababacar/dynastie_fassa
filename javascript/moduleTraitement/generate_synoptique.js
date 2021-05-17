@@ -194,9 +194,10 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 
 	// This converter is used by the Picture.
 	function findHeadShot(key) {
-		return "../../mesImages/img_avatar1.png"; // There are only 16 images on the server
+		// return "../../mesImages/img_avatar1.png"; // There are only 16 images on the server
 		// if (key < 0 || key > 16) return "images/HSnopic.jpg"; // There are only 16 images on the server
-		// return "images/HS" + key + ".jpg"
+		return "mesImages/DF" + key + ".png"
+		// return "mesImages/img_avatar1.png";
 	}
 
 	diagram.nodeTemplate = // the default node template
