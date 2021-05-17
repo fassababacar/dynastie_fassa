@@ -1,3 +1,5 @@
+// import { Render } from '../../mesImages/img_avatar1.png';
+// mesImages / img_avatar1.png
 var nodeDataArray2 = [
 	// Famille Khoudia
 	{ key: "1", label: "Babacar FASSA", color: "orange", fig: "Actor" },
@@ -190,26 +192,55 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 				"undoManager.isEnabled": true
 			});
 
+	// This converter is used by the Picture.
+	function findHeadShot(key) {
+		return "../../mesImages/img_avatar1.png"; // There are only 16 images on the server
+		// if (key < 0 || key > 16) return "images/HSnopic.jpg"; // There are only 16 images on the server
+		// return "images/HS" + key + ".jpg"
+	}
+
 	diagram.nodeTemplate = // the default node template
 		$(go.Node, "Vertical",
 			{ isTreeExpanded: true },  // by default collapsed
 			$(go.Panel, "Auto",
 				$(go.Shape, // "Rectangle",
-					{ strokeWidth: 3, width: 250, height: 100, margin: 2 },
-					new go.Binding("figure", "fig"), // Type de figure
+					{ strokeWidth: 3, width: 250, height: 100, margin: 0.5 },
+					// new go.Binding("figure", "fig"), // Type de figure
 					new go.Binding("fill", "color"), // Color remplissage
 					new go.Binding("stroke", "stroke"), // Color Border
 				),
 
-				$(go.Panel, "Vertical",
-					$(go.TextBlock,
+				$(go.Panel, "Horizontal",
+					$(go.Picture,
 						{
-							stretch: go.GraphObject.Horizontal,
-							font: "bold 10pt Arial, sans-serif"
+							name: "Picture",
+							desiredSize: new go.Size(70, 70),
+							margin: 1.5,
 						},
-						new go.Binding("text", "label")
+						new go.Binding("source", "key", findHeadShot)
+					),
+					$(go.Panel, "Vertical",
+						$(go.TextBlock,
+							{
+								stretch: go.GraphObject.Horizontal,
+								font: "bold 10pt Arial, sans-serif",
+								margin: new go.Margin(6, 10, 0, 6),
+								stroke: "black"
+							},
+							new go.Binding("text", "label")
+						)
 					)
-				)
+				),
+
+				// $(go.Panel, "Vertical",
+				// 	$(go.TextBlock,
+				// 		{
+				// 			stretch: go.GraphObject.Horizontal,
+				// 			font: "bold 10pt Arial, sans-serif"
+				// 		},
+				// 		new go.Binding("text", "label")
+				// 	)
+				// )
 			),
 			$(go.Panel,  // this is underneath the "BODY"
 				{ height: 20 },  // always this height, even if the TreeExpanderButton is not visible
