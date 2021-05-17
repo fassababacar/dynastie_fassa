@@ -170,6 +170,14 @@ var linkDataArray2 = [
 // beau_frere_kh = ["11", "12", "13"];
 // belles_filles_kh = ["24", "25", "46", "47", "58", "59", "67", "70"];
 // Function Create synoptique
+// This converter is used by the Picture.
+function findHeadShot(key) {
+	// return "../../mesImages/img_avatar1.png"; // There are only 16 images on the server
+	if (key < 0 || key > 2) return "mesImages/img_avatar1.png"; // There are only 16 images on the server
+	console.log("mesImages/df" + key + ".png");
+	return "mesImages/df" + key + ".png"
+	// return "mesImages/img_avatar1.png";
+}
 function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMyOverviewDiv) {
 	var $ = go.GraphObject.make;  // for conciseness in defining templates
 	var diagram = // Creation du template du diagram
@@ -192,13 +200,7 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 				"undoManager.isEnabled": true
 			});
 
-	// This converter is used by the Picture.
-	function findHeadShot(key) {
-		// return "../../mesImages/img_avatar1.png"; // There are only 16 images on the server
-		// if (key < 0 || key > 16) return "images/HSnopic.jpg"; // There are only 16 images on the server
-		return "mesImages/DF" + key + ".png"
-		// return "mesImages/img_avatar1.png";
-	}
+
 
 	diagram.nodeTemplate = // the default node template
 		$(go.Node, "Vertical",
