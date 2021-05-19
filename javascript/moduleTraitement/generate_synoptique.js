@@ -170,12 +170,14 @@ var linkDataArray2 = [
 // beau_frere_kh = ["11", "12", "13"];
 // belles_filles_kh = ["24", "25", "46", "47", "58", "59", "67", "70"];
 // Function Create synoptique
+
 // This converter is used by the Picture.
 function findHeadShot(key) {
-	if (key < 0 || key > 2) return "mesImages/img_avatar1.png"; // There are only 16 images on the server
+	// if (key < 0 || key > 73) return "mesImages/img_avatar1.png"; // There are only 16 images on the server
 	return "mesImages/df" + key + ".png"
 }
-function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMyOverviewDiv) {
+
+function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMyOverviewDiv, varZoomFit, varCenterZoom) {
 	var $ = go.GraphObject.make;  // for conciseness in defining templates
 	var diagram = // Creation du template du diagram
 		$(go.Diagram, varMyDiagramDiv,
@@ -189,15 +191,13 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 					$(go.TreeLayout,
 						{
 							angle: 90, // Transposer le diagram de maniere veritical 90 ou 0 veritical
-							layerSpacing: 10,
 							arrangement: go.TreeLayout.ArrangementVertical,
-							layerSpacing: 200, nodeSpacing: 10
+							layerSpacing: 100,
+							nodeSpacing: 10
 						}
 					),
 				"undoManager.isEnabled": true
 			});
-
-
 
 	diagram.nodeTemplate = // the default node template
 		$(go.Node, "Vertical",
@@ -215,7 +215,7 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 						{
 							name: "Picture",
 							desiredSize: new go.Size(70, 70),
-							margin: 1.5,
+							// margin: 1.5,
 						},
 						new go.Binding("source", "key", findHeadShot)
 					),
@@ -224,7 +224,7 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 							{
 								stretch: go.GraphObject.Horizontal,
 								font: "bold 10pt Arial, sans-serif",
-								margin: new go.Margin(6, 10, 0, 6),
+								margin: new go.Margin(0, 0, 0, 20),
 								stroke: "black"
 							},
 							new go.Binding("text", "label")
@@ -275,6 +275,17 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 	var myOverview =
 		$(go.Overview, varMyOverviewDiv,  // the HTML DIV element for the Overview
 			{ observed: diagram, contentAlignment: go.Spot.Center });   // tell it which Diagram to show and pan
+
+	// Function pour Zoom
+	document.getElementById(varZoomFit).addEventListener('click', function () {
+		diagram.commandHandler.zoomToFit();
+	})
+
+	// Function pour Zoom
+	document.getElementById(varCenterZoom).addEventListener('click', function () {
+		diagram.scale = 1;
+		diagram.commandHandler.scrollToPart(diagram.findNodeForKey(1));
+	});
 	return diagram;
 }
 

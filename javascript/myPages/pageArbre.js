@@ -12,6 +12,15 @@ class MyPageArbre {
                     type: "button", props: { id: "idDisplayArbre", class: "btn btn-outline-info m-2", onclick: () => { this.functionAffichageDiagram() } },
                     children: ["Cliquer pour afficher l'arbre"]
                 },
+
+                {
+                    type: "button", props: { id: "idZoomToFit", class: "btn btn-outline-primary m-2" },
+                    children: ["Afficher l'arbre complet"]
+                },
+                {
+                    type: "button", props: { id: "idCenterZoom", class: "btn btn-outline-primary m-2" },
+                    children: ["Afficher Normal de l'arbre"]
+                },
             ]
         },
         // Div global pour le diagram
@@ -38,7 +47,7 @@ class MyPageArbre {
         },
     ]
     functionAffichageDiagram = () => {
-        this.varDiagrame = module.generateSynoptique(module.nodeDataArray2, module.linkDataArray2, "myDiagramDiv", "myOverviewDiv");
+        this.varDiagrame = module.generateSynoptique(module.nodeDataArray2, module.linkDataArray2, "myDiagramDiv", "myOverviewDiv", 'idZoomToFit', 'idCenterZoom');
         module.functionToggle("idDisplayArbre", "divGlobalDiagram");
     }
 }

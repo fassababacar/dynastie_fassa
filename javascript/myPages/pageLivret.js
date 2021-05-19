@@ -43,7 +43,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df2.png'
                                     }, children: []
                                 },
                                 {
@@ -70,7 +70,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df3.png'
                                     }, children: []
                                 },
                                 {
@@ -98,7 +98,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df4.png'
                                     }, children: []
                                 },
                                 {
@@ -148,7 +148,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df6.png'
                                     }, children: []
                                 },
                                 {
@@ -176,7 +176,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df7.png'
                                     }, children: []
                                 },
                                 {
@@ -205,7 +205,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df8.png'
                                     }, children: []
                                 },
                                 {
