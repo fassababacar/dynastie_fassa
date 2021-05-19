@@ -17,10 +17,10 @@ class MyPageArbre {
                     type: "button", props: { id: "idZoomToFit", class: "btn btn-outline-primary m-2" },
                     children: ["Cliquer pour afficher l'arbre complet"]
                 },
-                // {
-                //     type: "button", props: { id: "idCenterZoom", class: "btn btn-outline-primary m-2" },
-                //     children: ["Cliquer pour afficher l'arbre initial"]
-                // },
+                {
+                    type: "button", props: { id: "idCenterZoom", class: "btn btn-outline-primary m-2" },
+                    children: ["Cliquer pour afficher l'arbre initial"]
+                },
             ]
         },
         // Div global pour le diagram
