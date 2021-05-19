@@ -15,12 +15,12 @@ class MyPageArbre {
 
                 {
                     type: "button", props: { id: "idZoomToFit", class: "btn btn-outline-primary m-2" },
-                    children: ["Afficher l'arbre complet"]
+                    children: ["Cliquer pour afficher l'arbre complet"]
                 },
-                {
-                    type: "button", props: { id: "idCenterZoom", class: "btn btn-outline-primary m-2" },
-                    children: ["Afficher Normal de l'arbre"]
-                },
+                // {
+                //     type: "button", props: { id: "idCenterZoom", class: "btn btn-outline-primary m-2" },
+                //     children: ["Cliquer pour afficher l'arbre initial"]
+                // },
             ]
         },
         // Div global pour le diagram

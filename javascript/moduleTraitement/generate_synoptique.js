@@ -281,11 +281,11 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 		diagram.commandHandler.zoomToFit();
 	})
 
-	// Function pour Zoom
-	document.getElementById(varCenterZoom).addEventListener('click', function () {
-		diagram.scale = 1;
-		diagram.commandHandler.scrollToPart(diagram.findNodeForKey(1));
-	});
+	// // Function pour Zoom
+	// document.getElementById(varCenterZoom).addEventListener('click', function () {
+	// 	diagram.scale = 1;
+	// 	diagram.commandHandler.scrollToPart(diagram.findNodeForKey(1));
+	// });
 	return diagram;
 }
 
