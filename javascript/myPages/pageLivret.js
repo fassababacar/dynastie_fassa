@@ -15,7 +15,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df1.png'
                                     }, children: []
                                 },
                                 {
@@ -253,7 +253,7 @@ class MyPageLivret {
                             type: "div", props: { id: "", class: "card text-center col-sm-4", style: "" }, children: [
                                 {
                                     type: "img", props: {
-                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/img_avatar1.png'
+                                        id: "", class: "card-img-top", alt: "Card image", src: 'mesImages/df10.png'
                                     }, children: []
                                 },
                                 {
