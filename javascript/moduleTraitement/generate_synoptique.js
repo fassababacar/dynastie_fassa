@@ -170,7 +170,6 @@ var linkDataArray2 = [
 // beau_frere_kh = ["11", "12", "13"];
 // belles_filles_kh = ["24", "25", "46", "47", "58", "59", "67", "70"];
 // Function Create synoptique
-
 // This converter is used by the Picture.
 function findHeadShot(key) {
 	// if (key < 0 || key > 73) return "mesImages/img_avatar1.png"; // There are only 16 images on the server
@@ -286,6 +285,15 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 		diagram.scale = 1;
 		diagram.commandHandler.scrollToPart(diagram.findNodeForKey(1));
 	});
+
+	var button = document.getElementById('idMakeImage');
+	button.addEventListener('click', function () {
+		// var elmnt = document.getElementById("idDivImage");
+		// var varHeight = elmnt.clientHeight;
+		// var varWidth = elmnt.clientWidth;
+		// generateImages(diagram, varWidth + 1000, 2000);
+		createMakeImage(diagram);
+	}, false);
 	return diagram;
 }
 
@@ -387,6 +395,31 @@ function createImage(varDiagram) {
 		y += printSize.height;
 	}
 	setTimeout(function () { svgWindow.print(); }, 1);
+}
+
+function createMakeImage(varMydDiagram) {
+	// var d = varMydDiagram.documentBounds;
+	// var halfWidth = d.width / 2;
+	// var halfHeight = d.height / 2;
+	var newWindow = window.open("", "newWindow");
+	if (!newWindow) return;
+	var newDocument = newWindow.document;
+	var png = varMydDiagram.makeImage({
+		// size: new go.Size(varWidth, varHeight),
+		maxSize: new go.Size(Infinity, Infinity),
+		scale: 1,
+		type: "image/png"
+	});
+	newDocument.body.appendChild(png);
+
+	// var newDocument = document.getElementById('idDivImage');
+	// var png = varMydDiagram.makeImage({
+	// 	// size: new go.Size(varWidth, varHeight),
+	// 	maxSize: new go.Size(Infinity, Infinity),
+	// 	scale: 1,
+	// 	type: "image/png"
+	// });
+	// newDocument.appendChild(png);
 }
 // generateSynoptique(nodeDataArray2, linkDataArray2);
 // document.getElementById("blobButton").addEventListener("click", makeBlob);
