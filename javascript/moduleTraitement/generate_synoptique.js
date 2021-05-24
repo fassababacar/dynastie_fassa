@@ -12,6 +12,7 @@ var nodeDataArray2 = [
 	{ key: "8", label: "EUTOU KEUR Abdou FASSA", color: "white", fig: "Ellipse", stroke: "#ff0040", isGroup: true, size: "540 450" },
 	{ key: "9", label: "Oumar FASSA", color: "white", fig: "Ellipse", stroke: "green" },
 	{ key: "10", label: "EUTOU KEUR Maniane FASSA", color: "white", fig: "Ellipse", stroke: "#9900ff", isGroup: true, size: "780 450" },
+	{ key: "-1", label: "Amineta FASSA", color: "white", fig: "Ellipse", stroke: "green" },
 	// Famille Penda
 	{ key: "11", label: "Assane SOGUE", color: "#b3ffcc", fig: "Spade", stroke: "orange", group: "3" },
 	{ key: "12", label: "Alioune MAR", color: "#99ffbb", fig: "Spade", stroke: "orange", group: "3" },
@@ -89,6 +90,7 @@ var linkDataArray2 = [
 	{ from: "2", to: "4", label: "Link1", color: "gray" },
 	{ from: "2", to: "5", label: "Link1", color: "gray" },
 	{ from: "2", to: "6", label: "Link1", color: "gray" },
+	{ from: "2", to: "-1", label: "Link1", color: "gray" },
 	{ from: "2", to: "7", label: "Link1", color: "gray" },
 	{ from: "2", to: "8", label: "Link1", color: "gray" },
 	{ from: "2", to: "9", label: "Link1", color: "gray" },

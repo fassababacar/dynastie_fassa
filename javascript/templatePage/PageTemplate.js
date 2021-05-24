@@ -64,13 +64,13 @@ class MyNav extends DomClass {
                     {
                         type: "a", props: { id: "MyDivHomeId", class: "navbar-brand", href: "#" },
                         children: [//acceuil
-                            { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageLivret.js", "MyPageLivret") }, id: "", class: "" }, children: ["Afficher Livret de Famille"] },
+                            { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageLivret.js", "MyPageLivret") }, id: "", class: "" }, children: ["Cliquer pour afficher le Livret de Famille"] },
                         ]
                     },
                     {
                         type: "a", props: { id: "MyDivArbreId", class: "navbar-brand", href: "#" },
                         children: [//acceuil
-                            { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageArbre.js", "MyPageArbre") }, id: "", class: "" }, children: ["Afficher Arbre de la Famille"] },
+                            { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageArbre.js", "MyPageArbre") }, id: "", class: "" }, children: ["Cliquer pour afficher l'Arbre de la Famille"] },
                         ]
                     },
                 ]
