@@ -203,7 +203,7 @@ class MyPageLivret {
                                         {
                                             type: "div", props: { id: "", class: "card-text" }, children: [
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Né en 1944"] },
-                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédée sans enfants"] },
+                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédée trés jeune et sans enfants"] },
                                             ]
                                         },
                                     ]
@@ -656,7 +656,7 @@ class MyPageLivret {
                                                 {
                                                     type: "tr", props: { id: "", class: "" }, children: [
                                                         { type: "td", props: { id: "", class: "" }, children: ["7. Khoudia MBODJ"] },
-                                                        { type: "td", props: { id: "", class: "" }, children: ["Feu Aziz MBODJ"] },
+                                                        { type: "td", props: { id: "", class: "" }, children: ["Aziz MBODJ"] },
 
                                                     ]
                                                 },
@@ -706,6 +706,13 @@ class MyPageLivret {
                                                     type: "tr", props: { id: "", class: "" }, children: [
                                                         { type: "td", props: { id: "", class: "" }, children: ["14. Khoudia BOYE"] },
                                                         { type: "td", props: { id: "", class: "" }, children: ["Mor BOYE"] },
+
+                                                    ]
+                                                },
+                                                {
+                                                    type: "tr", props: { id: "", class: "" }, children: [
+                                                        { type: "td", props: { id: "", class: "" }, children: ["15. Khoudia"] },
+                                                        { type: "td", props: { id: "", class: "" }, children: ["Keur Niadanne ?????"] },
 
                                                     ]
                                                 },
