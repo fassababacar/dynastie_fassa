@@ -26,6 +26,7 @@ class MyPageLivret {
                                         {
                                             type: "div", props: { id: "", class: "card-text" }, children: [
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Né en 1900"] },
+                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédé en 1971"] },
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Fonctions occupées :"] },
                                                 {
                                                     type: "ul", props: { id: "", class: "" }, children: [
@@ -65,6 +66,7 @@ class MyPageLivret {
                                         {
                                             type: "div", props: { id: "", class: "card-text" }, children: [
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Né en 1912"] },
+                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédée en 2000"] },
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Fonctions occupées :"] },
                                                 {
                                                     type: "ul", props: { id: "", class: "" }, children: [
@@ -154,7 +156,7 @@ class MyPageLivret {
                                         {
                                             type: "div", props: { id: "", class: "card-text" }, children: [
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Né en 1939"] },
-                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédée sans enfants"] },
+                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédée en 1958 et sans enfants"] },
                                             ]
                                         },
                                     ]
@@ -175,6 +177,7 @@ class MyPageLivret {
                                         {
                                             type: "div", props: { id: "", class: "card-text" }, children: [
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Né en 1942"] },
+                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédé en 1995"] },
                                                 { type: "h6", props: { id: "", class: "" }, children: ["Fonctions occupées :"] },
                                                 {
                                                     type: "ul", props: { id: "", class: "" }, children: [
@@ -283,8 +286,8 @@ class MyPageLivret {
                                         { type: "h4", props: { id: "", class: "card-title text-center" }, children: ["Oumar FASSA"] },
                                         {
                                             type: "div", props: { id: "", class: "card-text" }, children: [
-                                                { type: "h6", props: { id: "", class: "" }, children: ["Né en 1950"] },
-                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédé à l’âge de 12 ans à Thiès au Sénégal des séquelles de méningite cérébrospinale compliquées d’une hydrocéphalie"] },
+                                                { type: "h6", props: { id: "", class: "" }, children: ["Né en 1952"] },
+                                                { type: "h6", props: { id: "", class: "" }, children: ["Décédé en 1964 à l’âge de 12 ans à Thiès au Sénégal des séquelles de méningite cérébrospinale compliquées d’une hydrocéphalie"] },
                                             ]
                                         },
                                     ]
