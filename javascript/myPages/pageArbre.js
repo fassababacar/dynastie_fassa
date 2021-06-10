@@ -13,18 +13,18 @@ class MyPageArbre {
                     children: ["Cliquer pour afficher l'arbre"]
                 },
 
-                {
-                    type: "button", props: { id: "idZoomToFit", class: "btn btn-outline-primary m-2" },
-                    children: ["Cliquer pour afficher l'apercu complet de l'arbre"]
-                },
-                {
-                    type: "button", props: { id: "idCenterZoom", class: "btn btn-outline-secondary m-2" },
-                    children: ["Cliquer pour afficher l'arbre initial"]
-                },
-                {
-                    type: "button", props: { id: "idMakeImage", class: "btn btn-outline-success m-2" },
-                    children: ["Cliquer pour céer l'image"]
-                },
+                // {
+                //     type: "button", props: { id: "idZoomToFit", class: "btn btn-outline-primary m-2" },
+                //     children: ["Cliquer pour afficher l'apercu complet de l'arbre"]
+                // },
+                // {
+                //     type: "button", props: { id: "idCenterZoom", class: "btn btn-outline-secondary m-2" },
+                //     children: ["Cliquer pour afficher l'arbre initial"]
+                // },
+                // {
+                //     type: "button", props: { id: "idMakeImage", class: "btn btn-outline-success m-2" },
+                //     children: ["Cliquer pour céer l'image"]
+                // },
             ]
         },
         // // Div Make Images

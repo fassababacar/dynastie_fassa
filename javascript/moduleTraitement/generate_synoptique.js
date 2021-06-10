@@ -8,7 +8,7 @@ var nodeDataArray2 = [
 	{ key: "4", label: "EUTOU KEUR Mamadou FASSA", color: "white", fig: "Ellipse", stroke: "#4000ff", isGroup: true, size: "5200 450" },
 	{ key: "5", label: "Fatsele FASSA", color: "white", fig: "Ellipse", stroke: "green" },
 	{ key: "6", label: "EUTOU KEUR Saer FASSA", color: "white", fig: "Ellipse", stroke: "#ff00ff", isGroup: true, size: "2600 450" },
-	{ key: "7", label: "EUTOU KEUR Yerime FASSA", color: "white", fig: "Ellipse", stroke: "#993300", isGroup: true, size: "1800 450" },
+	{ key: "7", label: "EUTOU KEUR Yerim FASSA", color: "white", fig: "Ellipse", stroke: "#993300", isGroup: true, size: "1800 450" },
 	{ key: "8", label: "EUTOU KEUR Abdou FASSA", color: "white", fig: "Ellipse", stroke: "#ff0040", isGroup: true, size: "540 450" },
 	{ key: "9", label: "Oumar FASSA", color: "white", fig: "Ellipse", stroke: "green" },
 	{ key: "10", label: "EUTOU KEUR Maniane FASSA", color: "white", fig: "Ellipse", stroke: "#9900ff", isGroup: true, size: "780 450" },
@@ -75,7 +75,7 @@ var nodeDataArray2 = [
 	{ key: "66", label: "Mouhamed FASSA", color: "#9fbfdf", fig: "FivePointedBurst", group: "7" },
 	// Famille Abdou
 	{ key: "67", label: "Hakima", color: "#4d4dff", fig: "Club", stroke: "orange", group: "8" },
-	{ key: "68", label: "Yerime FASSA", color: "#4d4dff", fig: "FivePointedBurst", group: "8" },
+	{ key: "68", label: "Yerim FASSA", color: "#4d4dff", fig: "FivePointedBurst", group: "8" },
 	{ key: "69", label: "Hanane FASSA", color: "#4d4dff", fig: "FivePointedBurst", group: "8" },
 	// Famille Maniane
 	{ key: "70", label: "Rose SALL", color: "#8080ff", fig: "Club", stroke: "orange", group: "10" },
@@ -334,25 +334,25 @@ function generateSynoptique(nodeDataArray, linkDataArray, varMyDiagramDiv, varMy
 		$(go.Overview, varMyOverviewDiv,  // the HTML DIV element for the Overview
 			{ observed: diagram, contentAlignment: go.Spot.Center });   // tell it which Diagram to show and pan
 
-	// Function pour Zoom
-	document.getElementById(varZoomFit).addEventListener('click', function () {
-		diagram.commandHandler.zoomToFit();
-	})
+	// // Function pour Zoom
+	// document.getElementById(varZoomFit).addEventListener('click', function () {
+	// 	diagram.commandHandler.zoomToFit();
+	// })
 
-	// Function pour Zoom
-	document.getElementById(varCenterZoom).addEventListener('click', function () {
-		diagram.scale = 1;
-		diagram.commandHandler.scrollToPart(diagram.findNodeForKey(1));
-	});
+	// // Function pour Zoom
+	// document.getElementById(varCenterZoom).addEventListener('click', function () {
+	// 	diagram.scale = 1;
+	// 	diagram.commandHandler.scrollToPart(diagram.findNodeForKey(1));
+	// });
 
-	var button = document.getElementById('idMakeImage');
-	button.addEventListener('click', function () {
-		// var elmnt = document.getElementById("idDivImage");
-		// var varHeight = elmnt.clientHeight;
-		// var varWidth = elmnt.clientWidth;
-		// generateImages(diagram, varWidth + 1000, 2000);
-		createMakeImage(diagram);
-	}, false);
+	// var button = document.getElementById('idMakeImage');
+	// button.addEventListener('click', function () {
+	// 	// var elmnt = document.getElementById("idDivImage");
+	// 	// var varHeight = elmnt.clientHeight;
+	// 	// var varWidth = elmnt.clientWidth;
+	// 	// generateImages(diagram, varWidth + 1000, 2000);
+	// 	createMakeImage(diagram);
+	// }, false);
 	return diagram;
 }
 
