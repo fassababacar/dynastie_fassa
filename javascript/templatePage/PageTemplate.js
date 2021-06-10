@@ -52,7 +52,7 @@ class MyNav extends DomClass {
                     "data-target": "#NavBarCollaps",
                     "aria-controls": "navbar",
                     "aria-expanded": "false",
-                    "aria-label": "Toggle navigation"
+                    "aria-label": "Toggle navigation",
                 }, children: [
                     { type: "span", props: { id: "", class: "navbar-toggler-icon" }, children: [""] },
                 ]
@@ -62,14 +62,20 @@ class MyNav extends DomClass {
                 type: "div", props: { id: "NavBarCollaps", class: "collapse navbar-collapse justify-content-between" },
                 children: [
                     {
-                        type: "a", props: { id: "MyDivHomeId", class: "navbar-brand", href: "#" },
-                        children: [//acceuil
+                        type: "a", props: {
+                            id: "MyDivHomeId", class: "navbar-brand", href: "#Livret",
+                            "data-toggle": "collapse", "data-target": ".navbar-collapse.show",
+                        },
+                        children: [// Menu Livret
                             { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageLivret.js", "MyPageLivret") }, id: "", class: "" }, children: ["Cliquer pour afficher le Livret de Famille"] },
                         ]
                     },
                     {
-                        type: "a", props: { id: "MyDivArbreId", class: "navbar-brand", href: "#" },
-                        children: [//acceuil
+                        type: "a", props: {
+                            id: "MyDivArbreId", class: "navbar-brand", href: "#Arbre",
+                            "data-toggle": "collapse", "data-target": ".navbar-collapse.show",
+                        },
+                        children: [// Menu Arbre
                             { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageArbre.js", "MyPageArbre") }, id: "", class: "" }, children: ["Cliquer pour afficher l'Arbre de la Famille"] },
                         ]
                     },
