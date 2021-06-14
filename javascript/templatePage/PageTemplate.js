@@ -79,6 +79,15 @@ class MyNav extends DomClass {
                             { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageArbre.js", "MyPageArbre") }, id: "", class: "" }, children: ["Cliquer pour afficher l'Arbre de la Famille"] },
                         ]
                     },
+                    {
+                        type: "a", props: {
+                            id: "MyDivAlbumId", class: "navbar-brand", href: "#Album",
+                            "data-toggle": "collapse", "data-target": ".navbar-collapse.show",
+                        },
+                        children: [// Menu Album
+                            { type: "span", props: { onclick: () => { this.FunctionNavigate("../myPages/pageAlbum.js", "MyPageAlbum") }, id: "", class: "" }, children: ["Cliquer pour afficher l'Album"] },
+                        ]
+                    },
                 ]
             },
         ]
